@@ -3,7 +3,7 @@
 
 loop() ->
     receive
-  {rectangle,Width,Ht} ->
+	{rectangle,Width,Ht} ->
 	    io:format("Area of rectangle is ~p~n",[Width * Ht]),
 	    loop();
 	{circle,R} ->

@@ -17,7 +17,7 @@ demo1() ->
 demo2() ->
     [{I,(catch generate_exception(I))} || I <- [1,2,3,4,5]].
 catcher(N) ->
-  try generate_exception(N) of
+	try generate_exception(N) of
 	    Val ->
 		 {N,normal,Val}
 	catch

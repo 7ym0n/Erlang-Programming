@@ -10,7 +10,7 @@ area(Pid,What) ->
 rpc(Pid,Request) ->
     Pid ! {self(),Request},
     receive
-  {Pid,Response} ->
+	{Pid,Response} ->
 	    Response
     end.
 

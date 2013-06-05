@@ -1,7 +1,7 @@
 -module(misc).
 -export([odds_and_evens_acc/1]).
 
-odds_and_evens_acc(L)  ->
+odds_and_evens_acc(L)	->
     odds_and_evens_acc(L,[],[]).
 odds_and_evens_acc([H|T],Odds, Evens)  ->
     case (H rem 2) of

@@ -1,0 +1,9 @@
+-record(file_info,{size,
+		   type,
+		   access,
+		   atime,
+		   mtime,
+		   ctime,
+		   mode,
+		   links,
+		   major_device}).
